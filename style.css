@@ -64,3 +64,32 @@ td{
     color: white;
     margin: 2px;
 }
+
+.input-container {
+    margin-top: 64px;
+}
+
+button {
+    height: 38px;
+    border-radius: 6px;
+    border: none;
+    background: #818384;
+    color: #fff;
+}
+
+.correct {
+    background: #538d4e;
+}
+
+.in-word {
+    background: #b59f3b;
+}
+
+.incorrect {
+    background: #3a3a3c;
+}
+
+p{
+    font-size: 32px;
+    color: white;
+}
