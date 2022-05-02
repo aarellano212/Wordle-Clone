@@ -63,7 +63,8 @@
     </div>
 </body>
 <script>
-    const answer = "CRANE"; //todo make this random word
+    const randAnswers = ["CRANE", "FIONA", "AHEAD", "BENNY", "ARRAY"];
+    let answer = randAnswers[Math.floor(Math.random() * randAnswers.length)];
     const board = document.getElementById('board');
     const textBox = document.querySelector('input');
     const submitButton = document.querySelector('button');
@@ -73,9 +74,10 @@
     submitButton.addEventListener('click', function (e) {
         let guess = textBox.value;
         if (guess.length !==5) {
-            return //don't accept wors that aren't 5 letters long
+            return //don't accept words that aren't 5 letters long
         }
-        //todo clear the textbox once you hit submit
+        //clear the text box once you hit submit
+        textBox.value = "";
 
         //render guess to the baord
         writeGuess(guess) //todo create this function
